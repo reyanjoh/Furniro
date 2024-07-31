@@ -1,0 +1,94 @@
+
+
+.footer{
+    display: flex;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+
+}
+
+.footerCompanyNameContainer{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin-right: 3rem;
+    /* justify-content: space-between; */
+
+    /* background-color: brown; */
+}
+
+.footerCompanyName{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.address{
+    color: var(--gray);
+}
+
+
+.footerNav{
+    /* background-color: brown; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 50rem; */
+
+}
+
+.footerNav div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+    width: 18.5rem;
+    /* background-color: antiquewhite; */
+}
+
+.footerNav div span {
+    margin-bottom: 2rem;
+    color: var(--gray);
+    font-size: .9rem;
+
+}
+
+.footerNav div ul li {
+    margin-bottom: 2rem;
+}
+
+.footerNav div ul li a{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.newLetter{
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.newLetterInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    margin-right: .8rem;
+    height: 1.5rem;
+}
+
+.subscribe{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    width: 5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.copyRights{
+    /* background-color: brown; */
+    width: 75rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--grayBorders);
+    margin-top: 2rem;
+}

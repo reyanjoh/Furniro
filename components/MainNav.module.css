@@ -1,0 +1,47 @@
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    /* background-color: brown; */
+    width: 76.5rem;
+
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.logoContainer span{
+    margin-left: 1rem;
+}
+
+.logoContainer span{
+    font-size: 2.3rem;
+}
+
+.navUl{
+    display: flex;
+    /* background-color: rebeccapurple; */
+    /* width: 100dvw; */
+    align-items: center;
+    
+}
+
+.navUl li{
+    margin-left: 3.5rem;
+    
+}
+
+.navUl li a img{
+    height: 18.67px;
+    
+}
+
+.navLinks{
+    display: flex;
+}
+
+.navLinks ul{
+    margin-left: 6rem;
+}
