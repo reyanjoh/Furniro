@@ -1,3 +1,57 @@
-.main{
-    background-color: rgb(36, 115, 185);
+/* .main{
+   
+  } */
+
+  .hero{
+    background-image: url("/hero background.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100dvw;
+    height: 40rem;
+    display: flex;
+    align-items: center;
   }
+
+  .hero div{
+    width: 50%;
+  }
+
+  .heroCTA{
+    background-color: #FFF3E3;
+
+    padding: 2.5rem 2.5rem 3rem ;
+
+    /* margin-right: 3rem; */
+
+    width: 40rem !important;
+    
+  }
+
+  .heroCTA h2{
+    font-size: .90rem;
+    letter-spacing: .2rem;
+  }
+
+  .heroCTA h1{
+    color: var(--primary-color);
+    font-weight: 800;
+    margin: .5rem 0 1rem;
+
+  }
+
+
+  .heroCTA p {
+    margin-bottom: 3rem;
+  }
+
+  .heroCTABtn{
+    background-color: #B88E2F;
+    padding: 1.5rem 3rem;
+    color: white;
+    font-weight: 600;
+    font-size: .75rem;
+  }
+
+
