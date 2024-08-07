@@ -7,7 +7,8 @@ function MainFooter() {
     <footer>
       <div className={styles.footer}>
         <div className={styles.footerCompanyNameContainer}>
-          <span className={styles.footerCompanyName}>Funiro.</span>
+          <Link className={styles.footerCompanyName} href={'/'}>Funiro.</Link>
+
           <span className={styles.address}>400 University Drive Suite 200 Coral Gables, FL 33134 USA</span>
         </div>
         <nav className={styles.footerNav}>

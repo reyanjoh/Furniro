@@ -33,6 +33,16 @@
     
 }
 
+.navUl li a{
+    transition: .25s;
+}
+
+
+
+.navUl li a:hover{
+    color: var(--primary-color);
+}
+
 .navUl li a img{
     height: 18.67px;
     

@@ -3,8 +3,10 @@
 .footer{
     display: flex;
     margin-top: 3rem;
+    border-top: 1px solid var(--grayBorders);
     /* width: 100%; */
     /* justify-content: space-between; */
+    padding-top: 3rem;
 
 }
 
@@ -59,7 +61,15 @@
 .footerNav div ul li a{
     font-size: .9rem;
     font-weight: 500;
+    transition: .25s;
 }
+
+
+.footerNav div ul li a:hover{
+    color: var(--primary-color);
+}
+
+
 
 .newLetter{
     width: 25rem;

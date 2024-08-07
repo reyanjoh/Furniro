@@ -6,14 +6,21 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
 
-  --main-padding-margin: 4rem;
   --gray: #9F9F9F;
   --grayBorders: #d9d9d9;
 
-  --body-width: 76.5rem;
 
   --primary-color: #B88E2F;
+  --secondary-color: #FCF8F3;
+  --subtext: #666666;
+
+  --discount-color: #E77070;
+  
   --header-text: 40px;
+  --body-width: 76.5rem;
+  --main-padding-margin: 4rem;
+
+
 
  
 }
@@ -56,6 +63,19 @@ ul{
   list-style: none;
 }
 
+.subtext{
+  color: var(--subtext);
+}
+
+section{
+  /* padding: 3rem 0; */
+  /* width: var(--body-width); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: #666666; */
+}
 
 
 /* @media (prefers-color-scheme: dark) {
@@ -63,3 +83,24 @@ ul{
     color-scheme: dark;
   }
 } */
+
+.revealBtnContainer{
+  display: flex;
+  justify-Content: center;
+  padding: 2rem 0;
+}
+
+.revealBtn{
+  /* background-color: red; */
+  padding: .5rem 4rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: .8rem;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.revealBtn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}

@@ -1,14 +1,17 @@
-/* .main{
-   
-  } */
+.main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
 
   .hero{
     background-image: url("/hero background.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: row;
     
-    width: 100dvw;
+    width: 100dvw !important;
     height: 40rem;
     display: flex;
     align-items: center;
@@ -52,6 +55,430 @@
     color: white;
     font-weight: 600;
     font-size: .75rem;
+  }
+
+
+  .section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .categorySection div:nth-child(1){
+    text-align: center;
+    width: 100%;
+  }
+
+  .categorySection h2{
+    font-weight: 800;
+    margin: .5rem 0;
+  }
+
+  .catCardContainer{
+    /* background-color: #B88E2F; */
+    width: var(--body-width);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+  .catCardCover{
+    height: 30rem;
+    border-radius: .5rem;
+  }
+
+  .catCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+  }
+
+  .catCard:hover{
+    opacity: .9;
+  }
+
+  .catCard span{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  .productSection{
+    width: var(--body-width);
+  }
+
+  .sectionHeaders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+
+    /* background-color: #B88E2F; */
+  }
+
+  .productContainer{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .productCard{
+    background-color: #F4F5F7;
+    position: relative;
+    
+  }
+
+  .productCardImgContainer{
+    background-color: brown;
+    position: relative;
+    height: 21rem;
+    overflow: hidden;
+    
+  }
+
+  .productCardStatus{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    background-color: var(--discount-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rem;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+  }
+
+  .productCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    
+  }
+
+
+  .productCardInfo{
+    padding: 1rem 1rem 2rem;
+  }
+
+  .productCardInfo h4{
+    font-size: 1.25rem;
+  }
+
+  .productCardDescription{
+    font-size: .9rem;
+    margin: 1rem 0;
+    color: var(--subtext);
+  }
+
+  .productCardPrices{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .productCardPrice{
+    font-weight: 700;
+
+  }
+
+  .productCardDiscountPrice{
+    font-weight: 400;
+    font-size: .8rem;
+    text-decoration: line-through;
+    color: var(--gray);
+
+  }
+
+
+  .productCard:hover .productCardImg {
+    transform: scale(1.03);
+  }
+
+  .productCardAddToCartContainer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    transition: all .3s;
+    
+
+  }
+  
+
+  /* .productCard:hover .productCardAddToCart{
+    visibility: hidden;
+
+  } */
+
+  .productCardShareLinks{
+    display: flex;
+  }
+
+  .productCardShareLink{
+    display: flex;
+    align-items: center;
+    /* background-color: #B88E2F; */
+    /* flex-direction: row; */
+  }
+
+  .productCardShareLink img{
+    height: 1rem;
+    width: 1rem;
+    margin-right: .5rem;
+  }
+  
+  .productCard:hover .productCardAddToCartContainer{
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.561);
+  }
+
+  .productCardAddToCart{
+    background-color: white;
+    padding: .5rem 2rem;
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .productCardShareLinks a{
+    margin: 0 .25rem;
+    padding: 0 .25rem;
+    color: white;
+  }
+
+  .ico{
+    height: 5rem;
+  }
+
+  .inspoSection{
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    width: 100dvw;
+    
+  }
+
+  .inspoContainer{
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    margin-left: calc((100dvw - var(--body-width))/2);
+    height: 100%;
+    /* background-color: #B88E2F; */
+  }
+
+  .inspoHeaders{
+    /* background-color: brown; */
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100%; */
+    
+
+  }
+
+  .inspoHeaders h2{
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .inspoHeaders p {
+    margin:  1rem 0 2rem;
+    color: var(--subtext);
+  }
+
+  .inspoHeaders a{
+    background-color: var(--primary-color);
+    padding: .8rem 2rem;
+    color: white;
+    font-size: .8rem;
+    
+  }
+
+  .inspoImgs{
+    /* background-color: rgb(134, 134, 134); */
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    /* height:  */
+    /* padding: 2rem 0; */
+    gap: 1.5rem;
+  }
+
+  .carouselImgContainer{
+    width: 15rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carouselImgContainerFilter{
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+
+    
+    /* visibility: hidden; */
+  }
+
+  .carouselImgContainer:hover .carouselImgContainerFilter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.241);
+  }
+
+  .carouselImgContainer:hover .carouselImgContainerFilter a{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.848);
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    padding: 1.5rem;
+    /* visibility: visible; */
+
+  }
+
+  .carouselImgContainerFilter a{
+    position: absolute;
+    bottom: -3rem;
+    /* transition: .3s; */
+    
+    /* visibility: hidden; */
+    /* bottom: 1rem;
+    left: 1rem; */
+  }
+
+  .carouselImgContainerFilter a::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    content: '→';
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: -2.5rem;
+    bottom: 0;
+    background-color: var(--primary-color);
+  }
+
+  .carouselImgContainerFilterSubtext{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    color: var(--subtext);
+  }
+
+  .carouselImgContainerFilterHeader{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+
+
+  .funiroFurnitureSection{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .funiroFurnitureSection h3{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--subtext);
+    margin-bottom: 1rem;
+  }
+
+  .funiroFurnitureSection h2{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .funiroFurnitureImageContainer{
+    display: grid;
+    grid-template-columns: 630px auto 630px;
+    /* justify-content: center; */
+    gap: 1rem;
+    overflow: hidden;
+    margin-top: -2rem;
+  }
+  
+
+  .funiroFurnitureLeftImages{
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .funiroFurnitureLeftImages > div{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+  }
+
+  .funiroFurnitureCenterImages{
+    display: flex;
+    align-items: center;
+  }
+
+  .funiroFurnitureRightImages{
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+  }
+  .funiroFurnitureRightImages div{
+    display: flex;
+    gap: 1rem;
+  }
+/*   
+  .funiroFurnitureLeftImage1{
+    height: 15rem;
+  } */
+  .funiroFurnitureLeftImage2{
+    height: 19rem;
+    align-self: flex-end;
+  }
+  /* .funiroFurnitureLeftImage3{
+    height: 15rem;
+  } */
+  .funiroFurnitureLeftImage4{
+    height: 15rem;
+  }
+
+  .funiroFurnitureRighImage1{
+    height: 19rem;
+    align-self: flex-end;
+  }
+  .funiroFurnitureRighImage2{
+    height: 23rem;
+
+  }
+  .funiroFurnitureRighImage3{
+    /* height: 5rem; */
+
+  }
+  .funiroFurnitureRighImage4{
+    height: 10rem;
+
   }
 
 
