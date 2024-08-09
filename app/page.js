@@ -245,46 +245,46 @@ export default function Home() {
 
         <div className={styles.funiroFurnitureImageContainer}>
           <div className={styles.funiroFurnitureLeftImages}>
-            <div>
+            {/* <div>
               <img className={styles.funiroFurnitureLeftImage1} src={'/funiroFurniture samples/sample7.png'}/>
               <img className={styles.funiroFurnitureLeftImage2} src={'/funiroFurniture samples/sample6.png'}/>
             </div>
             <div>
               <img className={styles.funiroFurnitureLeftImage3} src={'/funiroFurniture samples/sample9.png'}/>
               <img className={styles.funiroFurnitureLeftImage4} src={'/funiroFurniture samples/sample8.png'}/>
-            </div>
+            </div> */}
 
-            {/* <div>
+            <div>
               <Image className={styles.funiroFurnitureLeftImage1} alt="" width={274} height={382} src={'/funiroFurniture samples/sample7.png'}/>
               <Image className={styles.funiroFurnitureLeftImage2}  alt="" width={451} height={312} src={'/funiroFurniture samples/sample6.png'}/>
             </div>
             <div>
-              <Image className={styles.funiroFurnitureLeftImage3} alt="" width={295} height={392} src={'/funiroFurniture samples/sample9.png'}/>
-              <Image className={styles.funiroFurnitureLeftImage4} alt="" width={295} height={392} src={'/funiroFurniture samples/sample8.png'}/>
-            </div> */}
+              <Image className={styles.funiroFurnitureLeftImage3} alt="" width={381} height={323} src={'/funiroFurniture samples/sample9.png'}/>
+              <Image className={styles.funiroFurnitureLeftImage4} alt="" width={344} height={242} src={'/funiroFurniture samples/sample8.png'}/>
+            </div>
             
           </div>
           <div className={styles.funiroFurnitureCenterImages}>
             <Image className={styles.funiroFurnitureimg1} alt="" width={295} height={392} src={'/funiroFurniture samples/sample1.png'}/>
           </div>
           <div className={styles.funiroFurnitureRightImages}>
-            <div>
+            {/* <div>
               <img className={styles.funiroFurnitureRighImage1} src={'/funiroFurniture samples/sample2.png'}/>
               <img className={styles.funiroFurnitureRighImage2} src={'/funiroFurniture samples/sample3.png'}/>
             </div>
             <div>
               <img className={styles.funiroFurnitureRighImage3} src={'/funiroFurniture samples/sample4.png'}/>
               <img className={styles.funiroFurnitureRighImage4} src={'/funiroFurniture samples/sample5.png'}/>
-            </div>
+            </div> */}
 
-            {/* <div>
-              <Image className={styles.funiroFurnitureRighImage1} alt="" width={500} height={500} src={'/funiroFurniture samples/sample2.png'}/>
-              <Image className={styles.funiroFurnitureRighImage2} alt="" width={500} height={500} src={'/funiroFurniture samples/sample3.png'}/>
+            <div>
+              <Image className={styles.funiroFurnitureRighImage1} alt="" width={290} height={348} src={'/funiroFurniture samples/sample2.png'}/>
+              <Image className={styles.funiroFurnitureRighImage2} alt="" width={425} height={433} src={'/funiroFurniture samples/sample3.png'}/>
             </div>
             <div>
-              <Image className={styles.funiroFurnitureRighImage3} alt="" width={500} height={500} src={'/funiroFurniture samples/sample4.png'}/>
-              <Image className={styles.funiroFurnitureRighImage4} alt="" width={500} height={500} src={'/funiroFurniture samples/sample5.png'}/>
-            </div> */}
+              <Image className={styles.funiroFurnitureRighImage3} alt="" width={178} height={242} src={'/funiroFurniture samples/sample4.png'}/>
+              <Image className={styles.funiroFurnitureRighImage4} alt="" width={258} height={196} src={'/funiroFurniture samples/sample5.png'}/>
+            </div>
           </div>
 
         </div>
